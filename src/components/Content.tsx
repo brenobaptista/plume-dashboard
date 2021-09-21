@@ -1,11 +1,11 @@
 import Main from './Main'
 import Toolbar from './Toolbar'
 
-const Wrapper = (): JSX.Element => (
+const Content = (): JSX.Element => (
   <div className='w-full'>
     <Toolbar />
     <Main />
   </div>
 )
 
-export default Wrapper
+export default Content

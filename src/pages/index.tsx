@@ -1,6 +1,6 @@
 import { useState } from 'react'
+import Content from '../components/Content'
 import Sidebar from '../components/Sidebar'
-import Wrapper from '../components/Wrapper'
 import SidebarContext from '../contexts/SidebarContext'
 
 const Home = (): JSX.Element => {
@@ -11,7 +11,7 @@ const Home = (): JSX.Element => {
       <div className='flex'>
         <SidebarContext.Provider value={{ collapsed, setCollapsed }}>
           <Sidebar />
-          <Wrapper />
+          <Content />
         </SidebarContext.Provider>
       </div>
     </div>
