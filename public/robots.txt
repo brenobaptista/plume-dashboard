@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://dashboardtemplate.vercel.app/sitemap.xml
