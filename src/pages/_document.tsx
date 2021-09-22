@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-export const siteTitle = 'Dashboard Template'
+export const siteTitle = 'Plume Dashboard'
 
 export default class MyDocument extends Document {
   render(): JSX.Element {
@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
           <link rel='icon' href='/favicon.ico' />
           <meta
             name='description'
-            content='This is a dashboard template made using Next.js + Tailwind CSS + TypeScript.'
+            content='Dashboard template made using Next.js + Tailwind CSS + TypeScript.'
           />
           <meta
             property='og:image'

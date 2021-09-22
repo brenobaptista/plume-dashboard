@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dashboardtemplate.vercel.app/sitemap.xml
+Sitemap: https://plumedashboard.vercel.app/sitemap.xml
