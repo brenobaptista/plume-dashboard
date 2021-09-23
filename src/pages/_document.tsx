@@ -10,6 +10,7 @@ export default class MyDocument extends Document {
           <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
           <link rel='manifest' href='/site.webmanifest' />
+          <meta name='og:title' content={siteTitle} />
           <meta
             name='description'
             content='Dashboard template made using Next.js + Tailwind CSS + TypeScript.'
@@ -24,8 +25,6 @@ export default class MyDocument extends Document {
             name='google-site-verification'
             content='_cd7mw2YWYlX1KdSTwEDVxDz2n5eWnW87t8mo4WdKF8'
           />
-          <meta name='og:title' content={siteTitle} />
-          <meta name='twitter:card' content='summary_large_image' />
         </Head>
         <body>
           <Main />
