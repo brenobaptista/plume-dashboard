@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prettier": "prettier --write src",
+    "prepare": "husky install",
+    "dependencies": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
     "next": "11.0.1",
