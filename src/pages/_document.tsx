@@ -16,9 +16,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property='og:image'
-            content={`https://og-image.vercel.app/${encodeURI(
-              siteTitle
-            )}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg`}
+            content='https://plumedashboard.vercel.app/og-image.png'
           />
           <meta
             name='google-site-verification'
