@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import Footer from '../components/Footer'
 import Main from '../components/Main'
 import Sidebar from '../components/Sidebar'
 import Toolbar from '../components/Toolbar'
@@ -17,6 +18,7 @@ const Dashboard = (): JSX.Element => {
       <div className='w-full'>
         <Toolbar toggleCollapsed={toggleCollapsed} />
         <Main />
+        <Footer />
       </div>
     </div>
   )
