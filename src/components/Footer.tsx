@@ -1,7 +1,7 @@
 import Heart from './icons/Heart'
 
 const Footer = (): JSX.Element => (
-  <footer>
+  <footer className='w-screen sm:w-auto'>
     <div className='flex flex-col sm:block text-center text-gray-600 dark:text-gray-400'>
       <span>© {new Date().getFullYear()} Plume Dashboard. </span>
       <span>

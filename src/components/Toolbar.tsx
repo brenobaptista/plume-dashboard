@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Toolbar = ({ toggleCollapsed }: Props): JSX.Element => (
-  <nav className='p-4'>
+  <nav className='w-screen sm:w-auto p-4'>
     <SidebarToggle
       className='w-10 h-10 p-2 hover:opacity-75 rounded'
       toggleCollapsed={toggleCollapsed}
