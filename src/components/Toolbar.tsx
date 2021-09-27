@@ -1,3 +1,4 @@
+import Dropdown from './Dropdown'
 import SidebarToggle from './SidebarToggle'
 import Theme from './Theme'
 
@@ -13,6 +14,7 @@ const Toolbar = ({ toggleCollapsed }: Props): JSX.Element => (
     />
     <div className='flex space-x-10'>
       <Theme className='w-10 h-10 p-2 hover:opacity-75' />
+      <Dropdown />
     </div>
   </nav>
 )
