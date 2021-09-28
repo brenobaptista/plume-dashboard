@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 import Caret from './icons/Caret'
@@ -9,6 +9,24 @@ import User from './icons/User'
 const Dropdown = (): JSX.Element => {
   const [expanded, setExpanded] = useState(false)
 
+  const toggleRef = useRef(null)
+  const menuRef = useRef(null)
+
+  useEffect(() => {
+    const handleClick = event => {
+      const insideToggle = toggleRef.current?.contains(event.target)
+      const insideMenu = menuRef.current?.contains(event.target)
+
+      if (!(insideToggle || insideMenu)) {
+        setExpanded(false)
+      }
+    }
+
+    window.addEventListener('click', handleClick)
+
+    return () => window.removeEventListener('click', handleClick)
+  }, [])
+
   return (
     <div className='relative inline-block text-sm'>
       <button
@@ -18,6 +36,7 @@ const Dropdown = (): JSX.Element => {
         aria-expanded='true'
         aria-haspopup='true'
         onClick={() => setExpanded(!expanded)}
+        ref={toggleRef}
       >
         <span>My Account</span>
         <Caret width={20} height={20} />
@@ -31,6 +50,7 @@ const Dropdown = (): JSX.Element => {
         role='menu'
         aria-orientation='vertical'
         aria-labelledby='menu-button'
+        ref={menuRef}
       >
         <div className='py-1' role='none'>
           <Link href='/profile'>
