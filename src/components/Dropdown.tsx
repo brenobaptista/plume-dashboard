@@ -13,17 +13,17 @@ const Dropdown = (): JSX.Element => {
     <div className='relative inline-block text-sm'>
       <button
         type='button'
-        className='flex space-x-3 rounded px-4 py-2 bg-white dark:bg-gray-800 hover:opacity-75 border border-gray-200 dark:border-gray-700'
+        className='flex space-x-2 p-2 hover:opacity-75'
         id='menu-button'
         aria-expanded='true'
         aria-haspopup='true'
         onClick={() => setExpanded(!expanded)}
       >
-        <span>Options</span>
+        <span>My Account</span>
         <Caret width={20} height={20} />
       </button>
       <div
-        className={`absolute right-0 mt-2 w-56 rounded shadow-lg transition-dropdown motion-reduce:transition-none transform-gpu ease-out duration-500 ${
+        className={`absolute right-0 mt-2 whitespace-nowrap rounded shadow-lg transition-dropdown motion-reduce:transition-none transform-gpu ease-out duration-500 ${
           expanded
             ? 'opacity-100 translate-y-0 visible'
             : 'opacity-0 -translate-y-2 invisible'
@@ -35,7 +35,7 @@ const Dropdown = (): JSX.Element => {
         <div className='py-1' role='none'>
           <Link href='/profile'>
             <a
-              className='flex items-center space-x-3 px-4 py-2 hover:opacity-75'
+              className='flex items-center space-x-4 px-6 py-2 hover:opacity-75'
               role='menuitem'
             >
               <User width={12} height={12} />
@@ -44,7 +44,7 @@ const Dropdown = (): JSX.Element => {
           </Link>
           <a
             href='https://github.com/brenobaptista/plume-dashboard'
-            className='flex items-center space-x-3 px-4 py-2 hover:opacity-75'
+            className='flex items-center space-x-4 px-6 py-2 hover:opacity-75'
             role='menuitem'
           >
             <Question width={12} height={12} />
@@ -54,7 +54,7 @@ const Dropdown = (): JSX.Element => {
         <div className='py-1' role='none'>
           <Link href='/signin'>
             <a
-              className='flex items-center space-x-3 px-4 py-2 hover:opacity-75'
+              className='flex items-center space-x-4 px-6 py-2 hover:opacity-75'
               role='menuitem'
             >
               <SignOut width={12} height={12} />
