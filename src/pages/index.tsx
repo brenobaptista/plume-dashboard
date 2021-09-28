@@ -13,7 +13,7 @@ const Dashboard = (): JSX.Element => {
   }
 
   return (
-    <div className='flex text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-900 transition-colors font-sans antialiased'>
+    <div className='flex text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-900 transition-colors motion-reduce:transition-none font-sans antialiased'>
       <Sidebar collapsed={collapsed} />
       <div className='w-full overflow-y-hidden'>
         <Toolbar toggleCollapsed={toggleCollapsed} />

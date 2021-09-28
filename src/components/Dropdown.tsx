@@ -20,7 +20,7 @@ const Dropdown = (): JSX.Element => {
         <Caret width={20} height={20} />
       </button>
       <div
-        className={`absolute right-0 mt-2 w-56 rounded shadow-lg transition-dropdown transform-gpu ease-out duration-500 ${
+        className={`absolute right-0 mt-2 w-56 rounded shadow-lg transition-dropdown motion-reduce:transition-none transform-gpu ease-out duration-500 ${
           expanded
             ? 'opacity-100 translate-y-0 visible'
             : 'opacity-0 -translate-y-2 invisible'
