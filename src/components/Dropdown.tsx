@@ -2,6 +2,9 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 import Caret from './icons/Caret'
+import Question from './icons/Question'
+import SignOut from './icons/SignOut'
+import User from './icons/User'
 
 const Dropdown = (): JSX.Element => {
   const [expanded, setExpanded] = useState(false)
@@ -31,22 +34,31 @@ const Dropdown = (): JSX.Element => {
       >
         <div className='py-1' role='none'>
           <Link href='/profile'>
-            <a className='block px-4 py-2 hover:opacity-75' role='menuitem'>
-              Profile
+            <a
+              className='flex items-center space-x-3 px-4 py-2 hover:opacity-75'
+              role='menuitem'
+            >
+              <User width={12} height={12} />
+              <span>Profile</span>
             </a>
           </Link>
           <a
             href='https://github.com/brenobaptista/plume-dashboard'
-            className='block px-4 py-2 hover:opacity-75'
+            className='flex items-center space-x-3 px-4 py-2 hover:opacity-75'
             role='menuitem'
           >
-            Help
+            <Question width={12} height={12} />
+            <span>Help</span>
           </a>
         </div>
         <div className='py-1' role='none'>
           <Link href='/signin'>
-            <a className='block px-4 py-2 hover:opacity-75' role='menuitem'>
-              Sign out
+            <a
+              className='flex items-center space-x-3 px-4 py-2 hover:opacity-75'
+              role='menuitem'
+            >
+              <SignOut width={12} height={12} />
+              <span>Sign out</span>
             </a>
           </Link>
         </div>
