@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       transitionProperty: {
-        spacing: 'margin, padding'
+        spacing: 'margin, padding',
+        dropdown: 'opacity, transform'
       },
       animation: {
         beat: 'beat 1s ease-out infinite'
