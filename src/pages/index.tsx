@@ -1,31 +1,15 @@
-import { useState } from 'react'
 import Head from 'next/head'
 
-import Footer from '../components/Footer'
-import Main from '../components/Main'
-import Sidebar from '../components/Sidebar'
-import Toolbar from '../components/Toolbar'
+import Layout from '../components/Layout'
 
-const Dashboard = (): JSX.Element => {
-  const [collapsed, setCollapsed] = useState(false)
-
-  const toggleCollapsed = () => {
-    setCollapsed(!collapsed)
-  }
-
-  return (
-    <div className='flex'>
-      <Head>
-        <title>Plume - Dashboard</title>
-      </Head>
-      <Sidebar collapsed={collapsed} />
-      <div className='w-full overflow-y-hidden'>
-        <Toolbar toggleCollapsed={toggleCollapsed} />
-        <Main />
-        <Footer />
-      </div>
-    </div>
-  )
-}
+const Dashboard = (): JSX.Element => (
+  <Layout>
+    <Head>
+      <title>Plume - Dashboard</title>
+    </Head>
+    <h1 className='text-xl font-bold pb-4'>Dashboard</h1>
+    <div className='w-full min-h-main p-4 sm:p-6 rounded bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700' />
+  </Layout>
+)
 
 export default Dashboard
