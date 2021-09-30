@@ -5,7 +5,7 @@ import 'tailwindcss/tailwind.css'
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
   <>
     <Head>
-      <title>Plume Dashboard</title>
+      <title>Plume - Dashboard</title>
     </Head>
     <Component {...pageProps} />
   </>

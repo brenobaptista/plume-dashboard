@@ -1,4 +1,4 @@
-# Plume Dashboard
+# Plume
 
 > Dashboard template made using Next.js + Tailwind CSS + TypeScript.
 
