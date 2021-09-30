@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 import Moon from './icons/Moon'
 import Sun from './icons/Sun'
@@ -9,6 +9,8 @@ interface Props {
 
 const Theme = ({ className }: Props): JSX.Element => {
   const [darkMode, setDarkMode] = useState(false)
+
+  const didMountRef = useRef(false)
 
   useEffect(() => {
     if (
@@ -21,14 +23,18 @@ const Theme = ({ className }: Props): JSX.Element => {
   }, [])
 
   useEffect(() => {
-    localStorage.darkMode = darkMode
+    if (didMountRef.current) {
+      localStorage.darkMode = darkMode
 
-    if (darkMode) {
-      document.documentElement.classList.add('dark')
-      document.documentElement.setAttribute('style', 'color-scheme: dark')
+      if (darkMode) {
+        document.documentElement.classList.add('dark')
+        document.documentElement.setAttribute('style', 'color-scheme: dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+        document.documentElement.setAttribute('style', 'color-scheme: light')
+      }
     } else {
-      document.documentElement.classList.remove('dark')
-      document.documentElement.setAttribute('style', 'color-scheme: light')
+      didMountRef.current = true
     }
   }, [darkMode])
 
