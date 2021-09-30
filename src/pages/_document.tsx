@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
             content='_cd7mw2YWYlX1KdSTwEDVxDz2n5eWnW87t8mo4WdKF8'
           />
         </Head>
-        <body>
+        <body className='text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-900 transition-colors motion-reduce:transition-none font-sans antialiased'>
           <Main />
           <NextScript />
         </body>
