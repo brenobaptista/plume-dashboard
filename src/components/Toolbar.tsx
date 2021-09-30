@@ -1,5 +1,5 @@
+import Hamburger from './icons/Hamburger'
 import Dropdown from './Dropdown'
-import SidebarToggle from './SidebarToggle'
 import Theme from './Theme'
 
 interface Props {
@@ -8,10 +8,14 @@ interface Props {
 
 const Toolbar = ({ toggleCollapsed }: Props): JSX.Element => (
   <nav className='flex justify-between w-screen sm:w-auto p-6'>
-    <SidebarToggle
+    <button
+      aria-label='Toggle sidebar'
+      type='button'
       className='w-10 h-10 p-2 hover:opacity-75'
-      toggleCollapsed={toggleCollapsed}
-    />
+      onClick={toggleCollapsed}
+    >
+      <Hamburger width={24} height={24} />
+    </button>
     <div className='flex space-x-10'>
       <Theme className='w-10 h-10 p-2 hover:opacity-75' />
       <Dropdown />
