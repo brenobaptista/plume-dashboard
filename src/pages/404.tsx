@@ -19,7 +19,7 @@ const Custom404 = (): JSX.Element => (
           something wrong.
         </p>
         <Link href='/'>
-          <a className='px-4 py-2 rounded hover:opacity-75 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700'>
+          <a className='px-4 py-2 bg-white dark:bg-gray-800 hover:opacity-75 border border-gray-200 dark:border-gray-700 rounded'>
             Return to website
           </a>
         </Link>
