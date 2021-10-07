@@ -1,7 +1,7 @@
 import Heart from './icons/Heart'
 
 const Footer = (): JSX.Element => (
-  <footer className='w-screen sm:w-auto'>
+  <footer className='w-screen sm:w-auto pb-6'>
     <div className='flex flex-col sm:block text-center text-sm text-gray-600 dark:text-gray-400'>
       <span>© {new Date().getFullYear()} Plume. </span>
       <span>
