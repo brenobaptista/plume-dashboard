@@ -10,7 +10,7 @@ interface Props {
 const Theme = ({ className }: Props): JSX.Element => {
   const [darkMode, setDarkMode] = useState(false)
 
-  const didMountRef = useRef(false)
+  const didMountRef = useRef<boolean>(false)
 
   useEffect(() => {
     if (

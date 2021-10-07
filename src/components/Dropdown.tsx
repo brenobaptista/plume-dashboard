@@ -9,8 +9,8 @@ import User from './icons/User'
 const Dropdown = (): JSX.Element => {
   const [expanded, setExpanded] = useState(false)
 
-  const toggleRef = useRef(null)
-  const menuRef = useRef(null)
+  const toggleRef = useRef<HTMLButtonElement>(null)
+  const menuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleClick = event => {
