@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Layout = ({ children }: Props): JSX.Element => {
-  const [collapsed, setCollapsed] = useState(false)
+  const [collapsed, setCollapsed] = useState<boolean>(false)
 
   const toggleCollapsed = () => {
     setCollapsed(!collapsed)

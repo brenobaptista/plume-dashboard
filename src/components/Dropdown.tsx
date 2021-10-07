@@ -7,7 +7,7 @@ import SignOut from './icons/SignOut'
 import User from './icons/User'
 
 const Dropdown = (): JSX.Element => {
-  const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState<boolean>(false)
 
   const toggleRef = useRef<HTMLButtonElement>(null)
   const menuRef = useRef<HTMLDivElement>(null)
