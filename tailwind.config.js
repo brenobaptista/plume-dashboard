@@ -25,7 +25,7 @@ module.exports = {
     extend: {
       animation: ['motion-safe'],
       transitionProperty: ['motion-reduce']
-    },
+    }
   },
   plugins: []
 }
