@@ -11,7 +11,7 @@ const Sidebar = forwardRef(
   ({ collapsed }: Props, sidebarRef: React.Ref<HTMLElement>): JSX.Element => (
     <nav
       ref={sidebarRef}
-      className={`w-64 h-screen p-6 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 ${
+      className={`w-64 min-h-screen p-6 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 ${
         collapsed ? 'ml-0 sm:-ml-64' : '-ml-64 sm:ml-0'
       } transition-spacing motion-reduce:transition-none duration-300 sm:duration-500 ease-in-out`}
     >
