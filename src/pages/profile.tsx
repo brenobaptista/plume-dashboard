@@ -33,8 +33,8 @@ const Profile = (): JSX.Element => {
         <title>Plume - Profile</title>
       </Head>
       <h1 className='text-xl font-bold pb-4'>Profile</h1>
-      <div className='w-full min-h-main p-4 sm:p-6 space-y-8 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded'>
-        <form onSubmit={handleEmail} className='max-w-md space-y-4'>
+      <div className='flex flex-wrap gap-8 justify-between w-full p-4 sm:p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded'>
+        <form onSubmit={handleEmail} className='flex-grow max-w-md space-y-4'>
           <h2 className='text-lg font-semibold'>Change email</h2>
           <label className='block space-y-2'>
             <span>Email</span>
@@ -53,7 +53,10 @@ const Profile = (): JSX.Element => {
             Save changes
           </button>
         </form>
-        <form onSubmit={handlePassword} className='max-w-md space-y-4'>
+        <form
+          onSubmit={handlePassword}
+          className='flex-grow max-w-md space-y-4'
+        >
           <h2 className='text-lg font-semibold'>Change password</h2>
           <label className='block space-y-2'>
             <span>Current password</span>
@@ -92,7 +95,7 @@ const Profile = (): JSX.Element => {
             Save changes
           </button>
         </form>
-        <div className='max-w-md space-y-4'>
+        <div className='flex-grow max-w-md space-y-4'>
           <h2 className='text-lg font-semibold'>Delete account</h2>
           <p>We’re sorry to hear you’d like to delete your account.</p>
           <button
