@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Head from 'next/head'
 
+import Eye from '../components/icons/Eye'
+import EyeOff from '../components/icons/EyeOff'
 import Layout from '../components/Layout'
 
 const Profile = (): JSX.Element => {
@@ -8,6 +10,7 @@ const Profile = (): JSX.Element => {
   const [currentPassword, setCurrentPassword] = useState<string>('')
   const [newPassword, setNewPassword] = useState<string>('')
   const [confirmedPassword, setConfirmedPassword] = useState<string>('')
+  const [showPassword, setShowPassword] = useState<boolean>(false)
 
   const handleEmail = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -43,7 +46,7 @@ const Profile = (): JSX.Element => {
               placeholder='Email'
               value={email}
               onChange={event => setEmail(event.target.value.toLowerCase())}
-              className='w-full px-3 py-2 text-sm bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded'
+              className='w-full px-3 py-2 text-sm bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded placeholder-gray-400 dark:placeholder-gray-600'
             />
           </label>
           <button
@@ -58,35 +61,68 @@ const Profile = (): JSX.Element => {
           className='flex-grow max-w-md space-y-4'
         >
           <h2 className='text-lg font-semibold'>Change password</h2>
-          <label className='block space-y-2'>
+          <label className='block relative space-y-2'>
             <span>Current password</span>
             <input
-              type='password'
+              type={showPassword ? 'text' : 'password'}
               placeholder='Current password'
               value={currentPassword}
               onChange={event => setCurrentPassword(event.target.value)}
-              className='w-full px-3 py-2 text-sm bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded'
+              className='w-full pl-3 pr-10 py-2 text-sm bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded placeholder-gray-400 dark:placeholder-gray-600'
             />
+            <div
+              className='absolute top-6 right-0 px-3 py-2 text-gray-400 dark:text-gray-600 cursor-pointer'
+              onClick={() => setShowPassword(!showPassword)}
+              aria-hidden='true'
+            >
+              {showPassword ? (
+                <EyeOff width={20} height={20} />
+              ) : (
+                <Eye width={20} height={20} />
+              )}
+            </div>
           </label>
-          <label className='block space-y-2'>
+          <label className='block relative space-y-2'>
             <span>New password</span>
             <input
-              type='password'
+              type={showPassword ? 'text' : 'password'}
               placeholder='New password'
               value={newPassword}
               onChange={event => setNewPassword(event.target.value)}
-              className='w-full px-3 py-2 text-sm bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded'
+              className='w-full pl-3 pr-10 py-2 text-sm bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded placeholder-gray-400 dark:placeholder-gray-600'
             />
+            <div
+              className='absolute top-6 right-0 px-3 py-2 text-gray-400 dark:text-gray-600 cursor-pointer'
+              onClick={() => setShowPassword(!showPassword)}
+              aria-hidden='true'
+            >
+              {showPassword ? (
+                <EyeOff width={20} height={20} />
+              ) : (
+                <Eye width={20} height={20} />
+              )}
+            </div>
           </label>
-          <label className='block space-y-2'>
+          <label className='block relative space-y-2'>
             <span>Confirm password</span>
             <input
-              type='password'
+              type={showPassword ? 'text' : 'password'}
               placeholder='Confirm password'
               value={confirmedPassword}
               onChange={event => setConfirmedPassword(event.target.value)}
-              className='w-full px-3 py-2 text-sm bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded'
+              className='w-full pl-3 pr-10 py-2 text-sm bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded placeholder-gray-400 dark:placeholder-gray-600'
             />
+            <div
+              className='absolute top-6 right-0 px-3 py-2 text-gray-400 dark:text-gray-600 cursor-pointer'
+              onClick={() => setShowPassword(!showPassword)}
+              aria-hidden='true'
+            >
+              {showPassword ? (
+                <EyeOff width={20} height={20} />
+              ) : (
+                <Eye width={20} height={20} />
+              )}
+            </div>
           </label>
           <button
             type='submit'
