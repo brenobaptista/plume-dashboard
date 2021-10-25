@@ -19,9 +19,8 @@ const Profile = (): JSX.Element => {
 
   const handlePassword = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    /* check if currentPassword is correct */
-    /* check if newPassword has more than X characters */
     /* check if newPassword and confirmPassword match */
+    /* check if currentPassword hash is correct in database */
     /* update in database, display a dialog in browser and send an email to the user */
   }
 
@@ -42,6 +41,7 @@ const Profile = (): JSX.Element => {
           <label className='block space-y-2'>
             <span>Email</span>
             <input
+              required
               type='email'
               placeholder='Email'
               value={email}
@@ -64,6 +64,8 @@ const Profile = (): JSX.Element => {
           <label className='block relative space-y-2'>
             <span>Current password</span>
             <input
+              required
+              minLength={8}
               type={showPassword ? 'text' : 'password'}
               placeholder='Current password'
               value={currentPassword}
@@ -85,6 +87,8 @@ const Profile = (): JSX.Element => {
           <label className='block relative space-y-2'>
             <span>New password</span>
             <input
+              required
+              minLength={8}
               type={showPassword ? 'text' : 'password'}
               placeholder='New password'
               value={newPassword}
@@ -106,6 +110,8 @@ const Profile = (): JSX.Element => {
           <label className='block relative space-y-2'>
             <span>Confirm password</span>
             <input
+              required
+              minLength={8}
               type={showPassword ? 'text' : 'password'}
               placeholder='Confirm password'
               value={confirmedPassword}
