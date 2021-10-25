@@ -28,7 +28,7 @@ const Profile = (): JSX.Element => {
   }
 
   return (
-    <Layout auth>
+    <Layout authenticated>
       <Head>
         <title>Plume - Profile</title>
       </Head>

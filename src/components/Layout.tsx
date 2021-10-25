@@ -6,10 +6,10 @@ import Toolbar from '../components/Toolbar'
 
 interface Props {
   children: React.ReactNode
-  auth?: boolean
+  authenticated?: boolean
 }
 
-const Layout = ({ children, auth = false }: Props): JSX.Element => {
+const Layout = ({ children, authenticated = false }: Props): JSX.Element => {
   const [collapsed, setCollapsed] = useState<boolean>(false)
 
   const toggleRef = useRef<HTMLButtonElement>(null)
@@ -40,7 +40,7 @@ const Layout = ({ children, auth = false }: Props): JSX.Element => {
 
   return (
     <>
-      {auth ? (
+      {authenticated ? (
         <div className='flex'>
           <Sidebar collapsed={collapsed} ref={sidebarRef} />
           <div className='w-full overflow-y-hidden'>
