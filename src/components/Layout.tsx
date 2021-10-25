@@ -6,9 +6,10 @@ import Toolbar from '../components/Toolbar'
 
 interface Props {
   children: React.ReactNode
+  auth?: boolean
 }
 
-const Layout = ({ children }: Props): JSX.Element => {
+const Layout = ({ children, auth = false }: Props): JSX.Element => {
   const [collapsed, setCollapsed] = useState<boolean>(false)
 
   const toggleRef = useRef<HTMLButtonElement>(null)
@@ -38,16 +39,26 @@ const Layout = ({ children }: Props): JSX.Element => {
   }
 
   return (
-    <div className='flex'>
-      <Sidebar collapsed={collapsed} ref={sidebarRef} />
-      <div className='w-full overflow-y-hidden'>
-        <Toolbar toggleCollapsed={toggleCollapsed} ref={toggleRef} />
-        <main className='w-screen sm:w-auto py-6 px-6 sm:px-12'>
-          {children}
-        </main>
-        <Footer />
-      </div>
-    </div>
+    <>
+      {auth ? (
+        <div className='flex'>
+          <Sidebar collapsed={collapsed} ref={sidebarRef} />
+          <div className='w-full overflow-y-hidden'>
+            <Toolbar toggleCollapsed={toggleCollapsed} ref={toggleRef} />
+            <main className='w-screen sm:w-auto py-6 px-6 sm:px-12'>
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </div>
+      ) : (
+        <div className='flex items-center justify-around h-screen p-6'>
+          <div className='p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded'>
+            {children}
+          </div>
+        </div>
+      )}
+    </>
   )
 }
 

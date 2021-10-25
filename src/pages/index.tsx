@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 
 const Dashboard = (): JSX.Element => (
-  <Layout>
+  <Layout auth>
     <Head>
       <title>Plume - Dashboard</title>
     </Head>
