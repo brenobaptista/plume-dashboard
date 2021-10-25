@@ -66,6 +66,7 @@ const Profile = (): JSX.Element => {
             <input
               required
               minLength={8}
+              autoComplete='current-password'
               type={showPassword ? 'text' : 'password'}
               placeholder='Current password'
               value={currentPassword}
@@ -89,6 +90,7 @@ const Profile = (): JSX.Element => {
             <input
               required
               minLength={8}
+              autoComplete='new-password'
               type={showPassword ? 'text' : 'password'}
               placeholder='New password'
               value={newPassword}
@@ -112,6 +114,7 @@ const Profile = (): JSX.Element => {
             <input
               required
               minLength={8}
+              autoComplete='new-password'
               type={showPassword ? 'text' : 'password'}
               placeholder='Confirm password'
               value={confirmedPassword}
