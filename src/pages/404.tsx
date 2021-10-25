@@ -11,7 +11,7 @@ const Custom404 = (): JSX.Element => (
     </Head>
     <h1 className='flex justify-between text-xl font-bold tracking-wide'>
       404: NOT FOUND
-      <Theme className='pl-4 hover:opacity-75' />
+      <Theme className='hover:opacity-75' />
     </h1>
     <p className='max-w-md mt-4 mb-8 text-lg text-justify'>
       It seems you have found something that used to exist or you spelled
