@@ -29,6 +29,7 @@
     "import/no-unresolved": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
     "no-undef": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/label-has-associated-control": "off"
