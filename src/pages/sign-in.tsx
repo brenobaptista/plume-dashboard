@@ -8,7 +8,7 @@ import Feather from '../components/icons/Feather'
 import Layout from '../components/Layout'
 import Theme from '../components/Theme'
 
-const Dashboard = (): JSX.Element => {
+const SignIn = (): JSX.Element => {
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
   const [showPassword, setShowPassword] = useState<boolean>(false)
@@ -88,4 +88,4 @@ const Dashboard = (): JSX.Element => {
   )
 }
 
-export default Dashboard
+export default SignIn
