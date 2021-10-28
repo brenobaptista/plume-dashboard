@@ -72,7 +72,7 @@ const Dropdown = (): JSX.Element => {
           </a>
         </div>
         <div className='py-1' role='none'>
-          <Link href='/signin'>
+          <Link href='/sign-in'>
             <a
               className='flex items-center space-x-4 px-6 py-2 hover:opacity-75'
               role='menuitem'
