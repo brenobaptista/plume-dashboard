@@ -15,6 +15,8 @@ const Profile = (): JSX.Element => {
   const handleEmail = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     /* update in database, display a dialog in browser and send an email to the user */
+    /* otherwise, display an error dialog in browser */
+    /* tip: change the mouse cursor to "wait" while waiting for a response */
   }
 
   const handlePassword = (event: React.FormEvent<HTMLFormElement>) => {
@@ -22,11 +24,15 @@ const Profile = (): JSX.Element => {
     /* check if newPassword and confirmPassword match */
     /* check if currentPassword hash is correct in database */
     /* update in database, display a dialog in browser and send an email to the user */
+    /* otherwise, display an error dialog in browser */
+    /* tip: change the mouse cursor to "wait" while waiting for a response */
   }
 
   const deleteAccount = () => {
     /* explain what happens and confirm with user */
     /* update in database, display a dialog in browser and send an email to the user */
+    /* otherwise, display an error dialog in browser */
+    /* tip: change the mouse cursor to "wait" while waiting for a response */
   }
 
   return (

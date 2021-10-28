@@ -12,7 +12,10 @@ const ResetPassword = (): JSX.Element => {
   const handleResetPassword = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     /* submit email to back-end, which will send the user an email with instructions */
+    /* create a new page for the second step: allowing the user to reset the password */
     /* then, display a success dialog in browser */
+    /* otherwise, display an error dialog in browser */
+    /* tip: change the mouse cursor to "wait" while waiting for a response */
   }
 
   return (

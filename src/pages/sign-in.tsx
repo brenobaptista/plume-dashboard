@@ -17,6 +17,7 @@ const SignIn = (): JSX.Element => {
     event.preventDefault()
     /* submit email and password to back-end then redirect the user if they are correct */
     /* otherwise, display an error dialog in browser */
+    /* tip: change the mouse cursor to "wait" while waiting for a response */
   }
 
   return (
