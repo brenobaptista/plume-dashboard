@@ -19,6 +19,7 @@ const SignUp = (): JSX.Element => {
     /* check if password and confirmPassword match */
     /* submit the data to the back-end to be processed */
     /* redirect the user to the dashboard and send an email to the user to confirm the email */
+    /* consider adding a CAPTCHA like hCaptcha or reCAPTCHA */
     /* otherwise, display an error dialog in browser */
     /* tip: change the mouse cursor to "wait" while waiting for a response */
   }
