@@ -53,8 +53,8 @@ const SignUp = (): JSX.Element => {
           <span>Password</span>
           <input
             required
-            pattern='(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}'
-            title='Must contain at least one lowercase letter, one uppercase letter, one numeric value and one special symbol, and the total length should be greater than or equal to 8.'
+            pattern='(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,24}'
+            title='Must contain at least one lowercase letter, one uppercase letter, one numeric value and one special symbol, and the total length should be between 8 and 24.'
             autoComplete='new-password'
             type={showPassword ? 'text' : 'password'}
             placeholder='New password'
@@ -78,8 +78,8 @@ const SignUp = (): JSX.Element => {
           <span>Confirm password</span>
           <input
             required
-            pattern='(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}'
-            title='Must contain at least one lowercase letter, one uppercase letter, one numeric value and one special symbol, and the total length should be greater than or equal to 8.'
+            pattern='(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,24}'
+            title='Must contain at least one lowercase letter, one uppercase letter, one numeric value and one special symbol, and the total length should be between 8 and 24.'
             autoComplete='new-password'
             type={showPassword ? 'text' : 'password'}
             placeholder='Confirm password'
