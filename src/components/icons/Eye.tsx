@@ -7,11 +7,11 @@ const Eye = ({ width, height }: Props): JSX.Element => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 24 24'
-    aria-hidden='true'
     width={width}
     height={height}
     fill='none'
     stroke='currentColor'
+    aria-hidden='true'
   >
     <title>Hide Password</title>
     <path

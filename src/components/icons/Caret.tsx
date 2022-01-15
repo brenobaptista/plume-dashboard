@@ -7,12 +7,11 @@ const Caret = ({ width, height }: Props): JSX.Element => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
-    aria-hidden='true'
     width={width}
     height={height}
     fill='currentColor'
+    aria-hidden='true'
   >
-    <title>Caret</title>
     <path
       fillRule='evenodd'
       clipRule='evenodd'

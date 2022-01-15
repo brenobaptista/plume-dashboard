@@ -11,8 +11,8 @@ const SignOut = ({ width, height }: Props): JSX.Element => (
     height={height}
     fill='none'
     stroke='currentColor'
+    aria-hidden='true'
   >
-    <title>Sign Out</title>
     <path
       strokeLinecap='round'
       strokeLinejoin='round'

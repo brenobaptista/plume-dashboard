@@ -11,6 +11,7 @@ const Moon = ({ width, height }: Props): JSX.Element => (
     height={height}
     fill='none'
     stroke='currentColor'
+    aria-hidden='true'
   >
     <title>Activate light mode</title>
     <path

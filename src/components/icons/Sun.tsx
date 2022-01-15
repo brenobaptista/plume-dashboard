@@ -11,6 +11,7 @@ const Sun = ({ width, height }: Props): JSX.Element => (
     height={height}
     fill='none'
     stroke='currentColor'
+    aria-hidden='true'
   >
     <title>Activate dark mode</title>
     <path
