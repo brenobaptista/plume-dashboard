@@ -16,7 +16,7 @@ const Sidebar = forwardRef(
       } transition-spacing motion-reduce:transition-none duration-300 sm:duration-500 ease-in-out`}
     >
       <Link href='/'>
-        <a>
+        <a aria-label='Go to the dashboard'>
           <div className='flex space-x-3 justify-center text-xl font-bold'>
             <Feather width={28} height={28} />
             <span>Plume</span>
