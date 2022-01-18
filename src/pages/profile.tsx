@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import Head from 'next/head'
 
-import Eye from '../components/icons/Eye'
-import EyeOff from '../components/icons/EyeOff'
+import { Eye, EyeOff } from '../components/icons'
 import Layout from '../components/Layout'
 
 const Profile = (): JSX.Element => {

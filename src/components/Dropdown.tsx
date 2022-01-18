@@ -1,10 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
-import Caret from './icons/Caret'
-import Question from './icons/Question'
-import SignOut from './icons/SignOut'
-import User from './icons/User'
+import { Caret, Question, SignOut, User } from './icons'
 
 const Dropdown = (): JSX.Element => {
   const [expanded, setExpanded] = useState<boolean>(false)

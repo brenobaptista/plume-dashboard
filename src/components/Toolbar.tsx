@@ -1,6 +1,6 @@
 import { forwardRef } from 'react'
 
-import Hamburger from './icons/Hamburger'
+import { Hamburger } from './icons'
 import Dropdown from './Dropdown'
 import Theme from './Theme'
 

@@ -1,4 +1,4 @@
-import Heart from './icons/Heart'
+import { Heart } from './icons'
 
 const Footer = (): JSX.Element => (
   <footer className='w-screen sm:w-auto pb-6'>

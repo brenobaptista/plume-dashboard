@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Feather from '../components/icons/Feather'
+import { Feather } from '../components/icons'
 import Layout from '../components/Layout'
 import Theme from '../components/Theme'
 
