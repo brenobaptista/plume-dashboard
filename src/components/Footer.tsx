@@ -12,7 +12,7 @@ const Footer = (): JSX.Element => (
         by{' '}
         <a
           href='https://brenobaptista.vercel.app/'
-          className='text-purple-600 dark:text-purple-400 hover:opacity-75'
+          className='text-violet-600 dark:text-violet-400 hover:opacity-75'
           target='_blank'
           rel='noreferrer noopener'
         >

@@ -50,7 +50,7 @@ const ResetPassword = (): JSX.Element => {
         </label>
         <button
           type='submit'
-          className='w-full text-sm px-4 py-2 bg-purple-400 dark:bg-purple-600 hover:opacity-75 rounded'
+          className='w-full text-sm px-4 py-2 bg-violet-400 dark:bg-violet-600 hover:opacity-75 rounded'
         >
           Reset Password
         </button>

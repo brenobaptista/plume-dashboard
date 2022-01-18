@@ -59,7 +59,7 @@ const Profile = (): JSX.Element => {
           </label>
           <button
             type='submit'
-            className='text-sm px-4 py-2 bg-purple-400 dark:bg-purple-600 hover:opacity-75 rounded'
+            className='text-sm px-4 py-2 bg-violet-400 dark:bg-violet-600 hover:opacity-75 rounded'
           >
             Save changes
           </button>
@@ -145,7 +145,7 @@ const Profile = (): JSX.Element => {
           </label>
           <button
             type='submit'
-            className='text-sm px-4 py-2 bg-purple-400 dark:bg-purple-600 hover:opacity-75 rounded'
+            className='text-sm px-4 py-2 bg-violet-400 dark:bg-violet-600 hover:opacity-75 rounded'
           >
             Save changes
           </button>
@@ -156,7 +156,7 @@ const Profile = (): JSX.Element => {
           <button
             type='button'
             onClick={deleteAccount}
-            className='text-sm px-4 py-2 bg-purple-400 dark:bg-purple-600 hover:opacity-75 rounded'
+            className='text-sm px-4 py-2 bg-violet-400 dark:bg-violet-600 hover:opacity-75 rounded'
           >
             Delete account
           </button>

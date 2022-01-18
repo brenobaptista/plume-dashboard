@@ -18,7 +18,7 @@ const Custom404 = (): JSX.Element => (
       something wrong.
     </p>
     <Link href='/'>
-      <a className='inline-block text-sm px-4 py-2 bg-purple-400 dark:bg-purple-600 hover:opacity-75 rounded'>
+      <a className='inline-block text-sm px-4 py-2 bg-violet-400 dark:bg-violet-600 hover:opacity-75 rounded'>
         Return to website
       </a>
     </Link>

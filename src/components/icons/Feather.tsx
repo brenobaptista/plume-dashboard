@@ -10,7 +10,7 @@ const Feather = ({ width, height }: Props): JSX.Element => (
     width={width}
     height={height}
     fill='currentColor'
-    className='text-purple-500'
+    className='text-violet-500'
     role='img'
   >
     <title>Logo</title>

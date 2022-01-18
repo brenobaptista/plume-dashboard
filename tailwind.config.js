@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
+  content: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
   darkMode: 'class',
   theme: {
     extend: {
@@ -19,12 +19,6 @@ module.exports = {
       minHeight: {
         main: 'calc(100vh - 228px)'
       }
-    }
-  },
-  variants: {
-    extend: {
-      animation: ['motion-safe'],
-      transitionProperty: ['motion-reduce']
     }
   },
   plugins: []
