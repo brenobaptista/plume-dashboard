@@ -31,4 +31,6 @@ const Toolbar = forwardRef(
   )
 )
 
+Toolbar.displayName = 'Toolbar'
+
 export default Toolbar
