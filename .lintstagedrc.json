@@ -1,4 +1,0 @@
-{
-  "*.{ts,tsx}": "eslint --fix",
-  "*.{ts,tsx,css}": "prettier --single-quote --write"
-}
