@@ -77,11 +77,11 @@ const SignIn = (): JSX.Element => {
         </button>
       </form>
       <div className='flex justify-between pt-6 text-sm'>
-        <Link href='/reset-password'>
-          <a className='hover:opacity-75'>Reset Password</a>
+        <Link href='/reset-password' className='hover:opacity-75'>
+          Reset Password
         </Link>
-        <Link href='/sign-up'>
-          <a className='hover:opacity-75'>Sign Up</a>
+        <Link href='/sign-up' className='hover:opacity-75'>
+          Sign Up
         </Link>
       </div>
     </Layout>

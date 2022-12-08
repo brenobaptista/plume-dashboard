@@ -56,8 +56,8 @@ const ResetPassword = (): JSX.Element => {
         </button>
       </form>
       <div className='pt-6 text-sm'>
-        <Link href='/sign-in'>
-          <a className='hover:opacity-75'>Sign In</a>
+        <Link href='/sign-in' className='hover:opacity-75'>
+          Sign In
         </Link>
       </div>
     </Layout>

@@ -50,14 +50,14 @@ const Dropdown = (): JSX.Element => {
         ref={menuRef}
       >
         <div className='py-1' role='none'>
-          <Link href='/profile'>
-            <a
-              className='flex items-center space-x-4 px-6 py-2 hover:opacity-75'
-              role='menuitem'
-            >
-              <User width={12} height={12} />
-              <span>Profile</span>
-            </a>
+          <Link
+            href='/profile'
+            className='flex items-center space-x-4 px-6 py-2 hover:opacity-75'
+            role='menuitem'
+            passHref
+          >
+            <User width={12} height={12} />
+            <span>Profile</span>
           </Link>
           <a
             href='https://github.com/brenobaptista/plume-dashboard'
@@ -69,14 +69,14 @@ const Dropdown = (): JSX.Element => {
           </a>
         </div>
         <div className='py-1' role='none'>
-          <Link href='/sign-in'>
-            <a
-              className='flex items-center space-x-4 px-6 py-2 hover:opacity-75'
-              role='menuitem'
-            >
-              <SignOut width={12} height={12} />
-              <span>Sign out</span>
-            </a>
+          <Link
+            href='/sign-in'
+            className='flex items-center space-x-4 px-6 py-2 hover:opacity-75'
+            role='menuitem'
+            passHref
+          >
+            <SignOut width={12} height={12} />
+            <span>Sign out</span>
           </Link>
         </div>
       </div>
