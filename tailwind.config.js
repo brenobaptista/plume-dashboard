@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
@@ -19,6 +21,9 @@ module.exports = {
       },
       minHeight: {
         main: 'calc(100vh - 228px)'
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)', ...fontFamily.sans]
       }
     }
   },
