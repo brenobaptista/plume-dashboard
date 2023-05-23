@@ -11,7 +11,7 @@ const Footer = (): JSX.Element => (
         </div>
         by{' '}
         <a
-          href='https://brenobaptista.vercel.app/'
+          href='https://www.brenobaptista.com/'
           className='text-violet-600 dark:text-violet-400 hover:opacity-75'
           target='_blank'
           rel='noreferrer noopener'
