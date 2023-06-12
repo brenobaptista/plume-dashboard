@@ -20,9 +20,15 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/app/*": ["app/*"],
-      "@/components/*": ["components/*"],
-      "@/contexts/*": ["contexts/*"],
+      "@/app/*": [
+        "app/*"
+      ],
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/contexts/*": [
+        "contexts/*"
+      ],
     },
     "plugins": [
       {
