@@ -7,5 +7,5 @@ const buildEslintCommand = filenames =>
 
 module.exports = {
   '*.{ts,tsx}': [buildEslintCommand],
-  '*.{ts,tsx,md}': 'prettier --single-quote --write'
+  '*.{ts,tsx}': 'prettier --write'
 }
