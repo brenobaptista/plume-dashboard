@@ -4,5 +4,5 @@
   "jsxSingleQuote": true,
   "arrowParens": "avoid",
   "trailingComma": "none",
-  "endOfLine": "auto"
+  "endOfLine": "lf"
 }
