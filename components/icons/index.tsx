@@ -1,25 +1,11 @@
-import Caret from './Caret'
-import Eye from './Eye'
-import EyeOff from './EyeOff'
-import Feather from './Feather'
-import Hamburger from './Hamburger'
-import Heart from './Heart'
-import Moon from './Moon'
-import Question from './Question'
-import SignOut from './SignOut'
-import Sun from './Sun'
-import User from './User'
-
-export {
-  Caret,
-  Eye,
-  EyeOff,
-  Feather,
-  Hamburger,
-  Heart,
-  Moon,
-  Question,
-  SignOut,
-  Sun,
-  User
-}
+export { default as Caret } from './Caret'
+export { default as Eye } from './Eye'
+export { default as EyeOff } from './EyeOff'
+export { default as Feather } from './Feather'
+export { default as Hamburger } from './Hamburger'
+export { default as Heart } from './Heart'
+export { default as Moon } from './Moon'
+export { default as Question } from './Question'
+export { default as SignOut } from './SignOut'
+export { default as Sun } from './Sun'
+export { default as User } from './User'

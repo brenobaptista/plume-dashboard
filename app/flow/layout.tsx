@@ -1,4 +1,4 @@
-import { Feather } from '@/components/icons'
+import { Feather } from '@/icons'
 import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 interface Props {

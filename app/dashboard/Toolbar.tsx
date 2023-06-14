@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
 
 import Dropdown from './Dropdown'
-import { Hamburger } from '@/components/icons'
+import { Hamburger } from '@/icons'
 import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 interface Props {

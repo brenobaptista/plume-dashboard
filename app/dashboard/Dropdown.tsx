@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
-import { Caret, Question, SignOut, User } from '@/components/icons'
+import { Caret, Question, SignOut, User } from '@/icons'
 
 const Dropdown = () => {
   const [expanded, setExpanded] = useState<boolean>(false)

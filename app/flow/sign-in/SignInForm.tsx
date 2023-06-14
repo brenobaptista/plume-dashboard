@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import { Eye, EyeOff } from '@/components/icons'
+import { Eye, EyeOff } from '@/icons'
 
 const SignInForm = () => {
   const [email, setEmail] = useState<string>('')

@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
 import Link from 'next/link'
 
-import { Feather } from '@/components/icons'
+import { Feather } from '@/icons'
 
 interface Props {
   collapsed: boolean

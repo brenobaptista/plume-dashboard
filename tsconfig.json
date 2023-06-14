@@ -26,6 +26,9 @@
       "@/components/*": [
         "components/*"
       ],
+      "@/icons": [
+        "components/icons"
+      ],
       "@/contexts/*": [
         "contexts/*"
       ],
