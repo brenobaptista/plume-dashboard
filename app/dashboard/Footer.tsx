@@ -2,8 +2,8 @@ import { Heart } from '@/icons'
 
 const Footer = () => {
   return (
-    <footer className='w-screen sm:w-auto pb-6'>
-      <div className='flex flex-col sm:block text-center text-sm text-gray-600 dark:text-gray-400'>
+    <footer className='w-screen pb-6 sm:w-auto'>
+      <div className='flex flex-col text-center text-sm text-gray-600 dark:text-gray-400 sm:block'>
         <span>© {new Date().getFullYear()} Plume. </span>
         <span>
           Made with
@@ -13,7 +13,7 @@ const Footer = () => {
           by{' '}
           <a
             href='https://www.brenobaptista.com/'
-            className='text-violet-600 dark:text-violet-400 hover:opacity-75'
+            className='text-violet-600 hover:opacity-75 dark:text-violet-400'
             target='_blank'
             rel='noreferrer noopener'
           >

@@ -41,11 +41,11 @@ const Dropdown = () => {
         <Caret width={20} height={20} />
       </button>
       <div
-        className={`absolute right-0 mt-2 whitespace-nowrap shadow-lg transition-dropdown motion-reduce:transition-none ease-out duration-500 ${
+        className={`absolute right-0 mt-2 whitespace-nowrap shadow-lg transition-dropdown duration-500 ease-out motion-reduce:transition-none ${
           expanded
-            ? 'opacity-100 translate-y-0 visible'
-            : 'opacity-0 -translate-y-2 invisible'
-        } divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded`}
+            ? 'visible translate-y-0 opacity-100'
+            : 'invisible -translate-y-2 opacity-0'
+        } divide-y divide-gray-200 rounded border border-gray-200 bg-white dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-800`}
         role='menu'
         aria-orientation='vertical'
         aria-labelledby='menu-button'

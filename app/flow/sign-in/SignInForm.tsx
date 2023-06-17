@@ -18,7 +18,7 @@ const SignInForm = () => {
   }
 
   return (
-    <form onSubmit={handleSignIn} className='flex-grow max-w-md space-y-4'>
+    <form onSubmit={handleSignIn} className='max-w-md flex-grow space-y-4'>
       <label className='block space-y-2'>
         <span>Email</span>
         <input
@@ -27,10 +27,10 @@ const SignInForm = () => {
           placeholder='Email'
           value={email}
           onChange={event => setEmail(event.target.value.toLowerCase())}
-          className='w-full px-3 py-2 text-sm bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded placeholder-gray-400 dark:placeholder-gray-600'
+          className='w-full rounded border border-gray-200 bg-gray-100 px-3 py-2 text-sm placeholder-gray-400 dark:border-gray-700 dark:bg-gray-900 dark:placeholder-gray-600'
         />
       </label>
-      <label className='block relative space-y-2'>
+      <label className='relative block space-y-2'>
         <span>Password</span>
         <input
           required
@@ -40,10 +40,10 @@ const SignInForm = () => {
           placeholder='Password'
           value={password}
           onChange={event => setPassword(event.target.value)}
-          className='w-full pl-3 pr-10 py-2 text-sm bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded placeholder-gray-400 dark:placeholder-gray-600'
+          className='w-full rounded border border-gray-200 bg-gray-100 py-2 pl-3 pr-10 text-sm placeholder-gray-400 dark:border-gray-700 dark:bg-gray-900 dark:placeholder-gray-600'
         />
         <div
-          className='absolute top-6 right-0 px-3 py-2 text-gray-400 dark:text-gray-600 cursor-pointer'
+          className='absolute right-0 top-6 cursor-pointer px-3 py-2 text-gray-400 dark:text-gray-600'
           onClick={() => setShowPassword(!showPassword)}
           aria-hidden='true'
         >
@@ -56,7 +56,7 @@ const SignInForm = () => {
       </label>
       <button
         type='submit'
-        className='w-full text-sm px-4 py-2 bg-violet-400 dark:bg-violet-600 hover:opacity-75 rounded'
+        className='w-full rounded bg-violet-400 px-4 py-2 text-sm hover:opacity-75 dark:bg-violet-600'
       >
         Sign In
       </button>

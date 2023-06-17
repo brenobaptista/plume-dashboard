@@ -27,7 +27,7 @@ interface Props {
 const RootLayout = ({ children }: Props) => {
   return (
     <html lang='en' className={`${inter.variable} font-sans antialiased`}>
-      <body className='text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-900'>
+      <body className='bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200'>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

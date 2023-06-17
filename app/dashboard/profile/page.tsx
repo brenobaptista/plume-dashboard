@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <>
-      <h1 className='text-xl font-bold pb-4'>Profile</h1>
-      <div className='flex flex-wrap gap-8 justify-between w-full p-4 sm:p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded'>
+      <h1 className='pb-4 text-xl font-bold'>Profile</h1>
+      <div className='flex w-full flex-wrap justify-between gap-8 rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
         <ChangeEmailForm />
         <ChangePasswordForm />
         <DeleteAccount />

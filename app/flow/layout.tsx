@@ -7,8 +7,8 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className='flex items-center justify-around h-screen p-6'>
-      <div className='p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded'>
+    <div className='flex h-screen items-center justify-around p-6'>
+      <div className='rounded border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800'>
         <div className='text-right'>
           <ThemeSwitcher className='hover:opacity-75' />
         </div>

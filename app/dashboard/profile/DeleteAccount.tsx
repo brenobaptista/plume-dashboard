@@ -10,13 +10,13 @@ const DeleteAccount = () => {
   }
 
   return (
-    <div className='flex-grow max-w-md space-y-4'>
+    <div className='max-w-md flex-grow space-y-4'>
       <h2 className='text-lg font-semibold'>Delete account</h2>
       <p>We’re sorry to hear you’d like to delete your account.</p>
       <button
         type='button'
         onClick={deleteAccount}
-        className='text-sm px-4 py-2 bg-violet-400 dark:bg-violet-600 hover:opacity-75 rounded'
+        className='rounded bg-violet-400 px-4 py-2 text-sm hover:opacity-75 dark:bg-violet-600'
       >
         Delete account
       </button>

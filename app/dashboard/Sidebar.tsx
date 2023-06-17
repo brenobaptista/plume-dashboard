@@ -11,12 +11,12 @@ const Sidebar = forwardRef(
   ({ collapsed }: Props, sidebarRef: React.Ref<HTMLElement>) => (
     <nav
       ref={sidebarRef}
-      className={`w-64 min-h-screen p-6 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 ${
+      className={`min-h-screen w-64 border-r border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800 ${
         collapsed ? 'ml-0 sm:-ml-64' : '-ml-64 sm:ml-0'
-      } transition-spacing motion-reduce:transition-none duration-300 sm:duration-500 ease-in-out`}
+      } transition-spacing duration-300 ease-in-out motion-reduce:transition-none sm:duration-500`}
     >
       <Link href='/dashboard' aria-label='Go to the dashboard' passHref>
-        <div className='flex space-x-3 justify-center text-xl font-bold'>
+        <div className='flex justify-center space-x-3 text-xl font-bold'>
           <Feather width={28} height={28} />
           <span>Plume</span>
         </div>
