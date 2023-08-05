@@ -20,7 +20,7 @@ const Toolbar = forwardRef(
       >
         <Hamburger width={24} height={24} />
       </button>
-      <div className='flex space-x-10'>
+      <div className='flex items-center space-x-10'>
         <ThemeSwitcher className='h-10 w-10 p-2 hover:opacity-75' />
         <Dropdown />
       </div>

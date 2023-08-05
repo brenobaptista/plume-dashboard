@@ -30,14 +30,14 @@ const Dropdown = () => {
     <div className='relative inline-block text-sm'>
       <button
         type='button'
-        className='flex h-full space-x-2 p-2 font-medium hover:opacity-75'
+        className='flex space-x-2 p-2 hover:opacity-75'
         id='menu-button'
         aria-expanded='true'
         aria-haspopup='true'
         onClick={() => setExpanded(!expanded)}
         ref={toggleRef}
       >
-        <span>My Account</span>
+        <span className='font-medium'>My Account</span>
         <Caret width={20} height={20} />
       </button>
       <div
