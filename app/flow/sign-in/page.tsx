@@ -15,10 +15,16 @@ const Page = () => (
     </Heading>
     <SignInForm />
     <div className='flex justify-between pt-6 text-sm'>
-      <Link href='/flow/reset-password' className='hover:opacity-75'>
+      <Link
+        href='/flow/reset-password'
+        className='text-violet-600 hover:opacity-75 dark:text-violet-400'
+      >
         Reset Password
       </Link>
-      <Link href='/flow/sign-up' className='hover:opacity-75'>
+      <Link
+        href='/flow/sign-up'
+        className='text-violet-600 hover:opacity-75 dark:text-violet-400'
+      >
         Sign Up
       </Link>
     </div>

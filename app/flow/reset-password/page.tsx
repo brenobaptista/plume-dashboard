@@ -15,7 +15,10 @@ const Page = () => (
     </Heading>
     <ResetPasswordForm />
     <div className='pt-6 text-sm'>
-      <Link href='/flow/sign-in' className='hover:opacity-75'>
+      <Link
+        href='/flow/sign-in'
+        className='text-violet-600 hover:opacity-75 dark:text-violet-400'
+      >
         Sign In
       </Link>
     </div>

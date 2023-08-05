@@ -6,7 +6,7 @@ export interface IInput
 }
 
 const Input = ({ ...props }: IInput) => (
-  <label className='block space-y-2'>
+  <label className='space-y-1'>
     <span>{props.label}</span>
     <input
       {...props}
