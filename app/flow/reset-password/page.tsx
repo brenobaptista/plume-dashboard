@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <>
-      <Heading tag='h2' className='pb-4 text-center'>
+      <Heading tag='h2' className='text-center'>
         Reset Password
       </Heading>
       <ResetPasswordForm />

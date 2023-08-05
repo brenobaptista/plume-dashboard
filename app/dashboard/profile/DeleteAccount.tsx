@@ -12,9 +12,11 @@ const DeleteAccount = () => {
   }
 
   return (
-    <div className='max-w-xs space-y-4'>
+    <>
       <Heading tag='h2'>Delete account</Heading>
-      <p>We’re sorry to hear you’d like to delete your account.</p>
+      <p className='pb-8'>
+        We’re sorry to hear you’d like to delete your account.
+      </p>
       <button
         type='button'
         onClick={deleteAccount}
@@ -22,7 +24,7 @@ const DeleteAccount = () => {
       >
         Delete account
       </button>
-    </div>
+    </>
   )
 }
 

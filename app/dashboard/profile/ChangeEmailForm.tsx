@@ -17,23 +17,25 @@ const ChangeEmailForm = () => {
   }
 
   return (
-    <form onSubmit={handleEmail} className='max-w-xs space-y-4'>
+    <>
       <Heading tag='h2'>Change email</Heading>
-      <Input
-        label='Email'
-        required
-        type='email'
-        placeholder='Email'
-        value={email}
-        onChange={event => setEmail(event.target.value.toLowerCase())}
-      />
-      <button
-        type='submit'
-        className='rounded bg-violet-400 px-4 py-2 text-sm font-medium hover:opacity-75 dark:bg-violet-600'
-      >
-        Save changes
-      </button>
-    </form>
+      <form onSubmit={handleEmail} className='max-w-xs space-y-4'>
+        <Input
+          label='Email'
+          required
+          type='email'
+          placeholder='Email'
+          value={email}
+          onChange={event => setEmail(event.target.value.toLowerCase())}
+        />
+        <button
+          type='submit'
+          className='rounded bg-violet-400 px-4 py-2 text-sm font-medium hover:opacity-75 dark:bg-violet-600'
+        >
+          Save changes
+        </button>
+      </form>
+    </>
   )
 }
 
