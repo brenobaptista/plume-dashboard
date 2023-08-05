@@ -4,10 +4,11 @@
 
 ## Features
 
-- Next.js.
-- Tailwind CSS (light/dark theme).
-- TypeScript.
-- ESLint + Prettier + Husky + Lint Staged.
+- Next.js
+- Tailwind CSS
+- Dark theme support
+- TypeScript
+- ESLint + Prettier + Husky + Lint Staged
 
 ## Getting Started
 
