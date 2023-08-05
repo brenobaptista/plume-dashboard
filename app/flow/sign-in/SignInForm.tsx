@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 
-import InputPassword from '@/components/InputPassword'
+import Input from '@/components/Input'
+import InputPassword from '@/components/Input/InputPassword'
 
 const SignInForm = () => {
   const [email, setEmail] = useState<string>('')
@@ -17,18 +18,15 @@ const SignInForm = () => {
   }
 
   return (
-    <form onSubmit={handleSignIn} className='max-w-md flex-grow space-y-4'>
-      <label className='block space-y-2'>
-        <span>Email</span>
-        <input
-          required
-          type='email'
-          placeholder='Email'
-          value={email}
-          onChange={event => setEmail(event.target.value.toLowerCase())}
-          className='w-full rounded border border-gray-200 bg-gray-100 px-3 py-2 text-sm placeholder-gray-400 dark:border-gray-700 dark:bg-gray-900 dark:placeholder-gray-600'
-        />
-      </label>
+    <form onSubmit={handleSignIn} className='max-w-xs space-y-4'>
+      <Input
+        label='Email'
+        required
+        type='email'
+        placeholder='Email'
+        value={email}
+        onChange={event => setEmail(event.target.value.toLowerCase())}
+      />
       <InputPassword
         label='Password'
         required

@@ -12,7 +12,7 @@ const DeleteAccount = () => {
   }
 
   return (
-    <div className='max-w-md flex-grow space-y-4'>
+    <div className='max-w-xs space-y-4'>
       <Heading tag='h2'>Delete account</Heading>
       <p>We’re sorry to hear you’d like to delete your account.</p>
       <button

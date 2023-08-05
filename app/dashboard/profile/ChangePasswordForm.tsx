@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 import Heading from '@/components/Heading'
-import InputPassword from '@/components/InputPassword'
+import InputPassword from '@/components/Input/InputPassword'
 
 const ChangePasswordForm = () => {
   const [currentPassword, setCurrentPassword] = useState<string>('')
@@ -21,7 +21,7 @@ const ChangePasswordForm = () => {
   }
 
   return (
-    <form onSubmit={handlePassword} className='max-w-md flex-grow space-y-4'>
+    <form onSubmit={handlePassword} className='max-w-xs space-y-4'>
       <Heading tag='h2'>Change password</Heading>
       <InputPassword
         label='Current password'
