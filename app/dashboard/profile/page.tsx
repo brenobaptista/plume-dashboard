@@ -9,23 +9,21 @@ export const metadata: Metadata = {
   title: 'Plume - Profile'
 }
 
-const Page = () => {
-  return (
-    <>
-      <Heading tag='h1'>Profile</Heading>
-      <div className='flex min-h-main flex-col gap-8'>
-        <div className='rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
-          <ChangeEmailForm />
-        </div>
-        <div className='rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
-          <ChangePasswordForm />
-        </div>
-        <div className='rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
-          <DeleteAccount />
-        </div>
+const Page = () => (
+  <>
+    <Heading tag='h1'>Profile</Heading>
+    <div className='flex min-h-main flex-col gap-8'>
+      <div className='rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
+        <ChangeEmailForm />
       </div>
-    </>
-  )
-}
+      <div className='rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
+        <ChangePasswordForm />
+      </div>
+      <div className='rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
+        <DeleteAccount />
+      </div>
+    </div>
+  </>
+)
 
 export default Page

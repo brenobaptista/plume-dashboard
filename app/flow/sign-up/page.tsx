@@ -8,20 +8,18 @@ export const metadata: Metadata = {
   title: 'Plume - Sign Up'
 }
 
-const Page = () => {
-  return (
-    <>
-      <Heading tag='h2' className='text-center'>
-        Create Account
-      </Heading>
-      <SignUpForm />
-      <div className='flex justify-between pt-6 text-sm'>
-        <Link href='/flow/sign-in' className='hover:opacity-75'>
-          Sign In
-        </Link>
-      </div>
-    </>
-  )
-}
+const Page = () => (
+  <>
+    <Heading tag='h2' className='text-center'>
+      Create Account
+    </Heading>
+    <SignUpForm />
+    <div className='flex justify-between pt-6 text-sm'>
+      <Link href='/flow/sign-in' className='hover:opacity-75'>
+        Sign In
+      </Link>
+    </div>
+  </>
+)
 
 export default Page

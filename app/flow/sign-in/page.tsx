@@ -8,23 +8,21 @@ export const metadata: Metadata = {
   title: 'Plume - Sign In'
 }
 
-const Page = () => {
-  return (
-    <>
-      <Heading tag='h2' className='text-center'>
-        Welcome to Plume
-      </Heading>
-      <SignInForm />
-      <div className='flex justify-between pt-6 text-sm'>
-        <Link href='/flow/reset-password' className='hover:opacity-75'>
-          Reset Password
-        </Link>
-        <Link href='/flow/sign-up' className='hover:opacity-75'>
-          Sign Up
-        </Link>
-      </div>
-    </>
-  )
-}
+const Page = () => (
+  <>
+    <Heading tag='h2' className='text-center'>
+      Welcome to Plume
+    </Heading>
+    <SignInForm />
+    <div className='flex justify-between pt-6 text-sm'>
+      <Link href='/flow/reset-password' className='hover:opacity-75'>
+        Reset Password
+      </Link>
+      <Link href='/flow/sign-up' className='hover:opacity-75'>
+        Sign Up
+      </Link>
+    </div>
+  </>
+)
 
 export default Page
