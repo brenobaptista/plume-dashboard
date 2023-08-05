@@ -3,6 +3,7 @@
 import { useState } from 'react'
 
 import Input from '@/components/Input'
+import Button from '@/components/Button'
 
 const ResetPasswordForm = () => {
   const [email, setEmail] = useState<string>('')
@@ -27,12 +28,9 @@ const ResetPasswordForm = () => {
         value={email}
         onChange={event => setEmail(event.target.value.toLowerCase())}
       />
-      <button
-        type='submit'
-        className='w-full rounded bg-violet-400 px-4 py-2 text-sm font-medium hover:opacity-75 dark:bg-violet-600'
-      >
+      <Button type='submit' className='w-full'>
         Reset Password
-      </button>
+      </Button>
     </form>
   )
 }

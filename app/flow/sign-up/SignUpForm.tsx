@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 import Input from '@/components/Input'
 import InputPassword from '@/components/Input/InputPassword'
+import Button from '@/components/Button'
 
 const SignUpForm = () => {
   const [email, setEmail] = useState<string>('')
@@ -50,12 +51,9 @@ const SignUpForm = () => {
         value={confirmedPassword}
         onChange={event => setConfirmedPassword(event.target.value)}
       />
-      <button
-        type='submit'
-        className='w-full rounded bg-violet-400 px-4 py-2 text-sm font-medium hover:opacity-75 dark:bg-violet-600'
-      >
+      <Button type='submit' className='w-full'>
         Sign Up
-      </button>
+      </Button>
     </form>
   )
 }

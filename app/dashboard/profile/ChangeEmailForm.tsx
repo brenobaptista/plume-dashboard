@@ -3,6 +3,7 @@
 import { useState } from 'react'
 
 import Input from '@/components/Input'
+import Button from '@/components/Button'
 import Heading from '@/components/Heading'
 
 const ChangeEmailForm = () => {
@@ -28,12 +29,7 @@ const ChangeEmailForm = () => {
           value={email}
           onChange={event => setEmail(event.target.value.toLowerCase())}
         />
-        <button
-          type='submit'
-          className='rounded bg-violet-400 px-4 py-2 text-sm font-medium hover:opacity-75 dark:bg-violet-600'
-        >
-          Save changes
-        </button>
+        <Button type='submit'>Save changes</Button>
       </form>
     </>
   )

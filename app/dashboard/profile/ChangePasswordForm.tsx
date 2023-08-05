@@ -2,8 +2,9 @@
 
 import { useState } from 'react'
 
-import Heading from '@/components/Heading'
 import InputPassword from '@/components/Input/InputPassword'
+import Button from '@/components/Button'
+import Heading from '@/components/Heading'
 
 const ChangePasswordForm = () => {
   const [currentPassword, setCurrentPassword] = useState<string>('')
@@ -53,12 +54,7 @@ const ChangePasswordForm = () => {
           value={confirmedPassword}
           onChange={event => setConfirmedPassword(event.target.value)}
         />
-        <button
-          type='submit'
-          className='rounded bg-violet-400 px-4 py-2 text-sm font-medium hover:opacity-75 dark:bg-violet-600'
-        >
-          Save changes
-        </button>
+        <Button type='submit'>Save changes</Button>
       </form>
     </>
   )
