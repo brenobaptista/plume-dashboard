@@ -30,7 +30,7 @@ const Dropdown = () => {
     <div className='relative inline-block text-sm'>
       <button
         type='button'
-        className='flex h-full space-x-2 p-2 hover:opacity-75'
+        className='flex h-full space-x-2 p-2 font-medium hover:opacity-75'
         id='menu-button'
         aria-expanded='true'
         aria-haspopup='true'
