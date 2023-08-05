@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 
+import Heading from '@/components/Heading'
 import InputPassword from '@/components/InputPassword'
 
 const ChangePasswordForm = () => {
@@ -21,7 +22,7 @@ const ChangePasswordForm = () => {
 
   return (
     <form onSubmit={handlePassword} className='max-w-md flex-grow space-y-4'>
-      <h2 className='text-xl font-semibold'>Change password</h2>
+      <Heading tag='h2'>Change password</Heading>
       <InputPassword
         label='Current password'
         required

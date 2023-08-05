@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 import SignInForm from './SignInForm'
+import Heading from '@/components/Heading'
 
 export const metadata: Metadata = {
   title: 'Plume - Sign In'
@@ -10,9 +11,9 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <>
-      <div className='flex justify-center pb-4 text-xl font-bold'>
+      <Heading tag='h2' className='pb-4 text-center'>
         Welcome to Plume
-      </div>
+      </Heading>
       <SignInForm />
       <div className='flex justify-between pt-6 text-sm'>
         <Link href='/flow/reset-password' className='hover:opacity-75'>

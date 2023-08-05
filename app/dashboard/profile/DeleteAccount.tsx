@@ -1,5 +1,7 @@
 'use client'
 
+import Heading from '@/components/Heading'
+
 const DeleteAccount = () => {
   const deleteAccount = () => {
     // explain what happens and confirm with user
@@ -11,7 +13,7 @@ const DeleteAccount = () => {
 
   return (
     <div className='max-w-md flex-grow space-y-4'>
-      <h2 className='text-lg font-semibold'>Delete account</h2>
+      <Heading tag='h2'>Delete account</Heading>
       <p>We’re sorry to hear you’d like to delete your account.</p>
       <button
         type='button'

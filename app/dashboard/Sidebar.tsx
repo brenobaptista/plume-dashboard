@@ -2,6 +2,7 @@ import { forwardRef } from 'react'
 import Link from 'next/link'
 
 import { Feather } from '@/icons'
+import Heading from '@/components/Heading'
 
 interface Props {
   collapsed: boolean
@@ -16,9 +17,9 @@ const Sidebar = forwardRef(
       } transition-spacing duration-300 ease-in-out motion-reduce:transition-none sm:duration-500`}
     >
       <Link href='/dashboard' aria-label='Go to the dashboard' passHref>
-        <div className='flex justify-center space-x-3 text-xl font-bold'>
+        <div className='flex justify-center space-x-3'>
           <Feather width={28} height={28} />
-          <span>Plume</span>
+          <Heading tag='h2'>Plume</Heading>
         </div>
       </Link>
     </nav>

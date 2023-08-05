@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 
+import Heading from '@/components/Heading'
+
 const ChangeEmailForm = () => {
   const [email, setEmail] = useState<string>('')
 
@@ -15,7 +17,7 @@ const ChangeEmailForm = () => {
 
   return (
     <form onSubmit={handleEmail} className='max-w-md flex-grow space-y-4'>
-      <h2 className='text-lg font-semibold'>Change email</h2>
+      <Heading tag='h2'>Change email</Heading>
       <label className='block space-y-2'>
         <span>Email</span>
         <input
