@@ -1,13 +1,13 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, ReactNode } from 'react'
 
 import Footer from './Footer'
 import Sidebar from './Sidebar'
 import Toolbar from './Toolbar'
 
 interface Props {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const Layout = ({ children }: Props) => {

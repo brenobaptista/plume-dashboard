@@ -1,11 +1,11 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, ReactNode } from 'react'
 
 import DarkModeContext from '@/contexts/DarkModeContext'
 
 interface Props {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const ThemeProvider = ({ children }: Props) => {

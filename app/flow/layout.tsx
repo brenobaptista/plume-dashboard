@@ -1,8 +1,10 @@
+import { ReactNode } from 'react'
+
 import { Feather } from '@/icons'
 import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 interface Props {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const Layout = ({ children }: Props) => {

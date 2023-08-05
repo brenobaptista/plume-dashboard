@@ -1,8 +1,10 @@
+import { ReactNode } from 'react'
+
 type Tag = 'h1' | 'h2' | 'h3'
 
 interface IHeading {
   tag: Tag
-  children: React.ReactNode
+  children: ReactNode
   className?: string
 }
 

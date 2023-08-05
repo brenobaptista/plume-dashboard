@@ -1,3 +1,5 @@
+import { ReactNode } from 'react'
+
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import 'tailwindcss/tailwind.css'
@@ -21,7 +23,7 @@ const inter = Inter({
 })
 
 interface Props {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const RootLayout = ({ children }: Props) => {
