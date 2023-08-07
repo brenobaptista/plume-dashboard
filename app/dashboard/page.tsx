@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Page = () => (
   <>
     <Heading tag='h1'>Dashboard</Heading>
-    <div className='min-h-main w-full rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
+    <div className='w-full rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
       <div className='flex flex-col gap-8'>
         <Plume />
         <Sitemap />

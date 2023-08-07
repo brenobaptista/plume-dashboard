@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef, ReactNode } from 'react'
 
-import Footer from './Footer'
 import Sidebar from './Sidebar'
 import Toolbar from './Toolbar'
 
@@ -47,7 +46,6 @@ const Layout = ({ children }: Props) => {
         <main className='w-screen px-6 py-6 sm:w-auto sm:px-12'>
           {children}
         </main>
-        <Footer />
       </div>
     </div>
   )

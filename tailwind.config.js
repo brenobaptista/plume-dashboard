@@ -19,9 +19,6 @@ module.exports = {
           '25%': { transform: 'scale(1.2)' }
         }
       },
-      minHeight: {
-        main: 'calc(100vh - 228px)'
-      },
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans]
       }
