@@ -4,12 +4,12 @@ import { Metadata } from 'next'
 import Heading from '@/components/Heading'
 
 export const metadata: Metadata = {
-  title: 'Plume - Dashboard'
+  title: 'Plume - Home'
 }
 
 const Page = () => (
   <>
-    <Heading tag='h1'>Dashboard</Heading>
+    <Heading tag='h1'>Home</Heading>
     <div className='w-full rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
       <div className='flex flex-col gap-8'>
         <Plume />
@@ -47,7 +47,7 @@ const Sitemap = () => (
           className='text-violet-600 hover:opacity-75 dark:text-violet-400'
           passHref
         >
-          Dashboard
+          Home
         </Link>
       </li>
       <li>
