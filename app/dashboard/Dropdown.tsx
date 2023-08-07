@@ -72,7 +72,7 @@ const Dropdown = () => {
         </div>
         <div className='py-1' role='none'>
           <Link
-            href='/flow/sign-in'
+            href='/auth/sign-in'
             className='flex items-center space-x-4 px-6 py-2 hover:opacity-75'
             role='menuitem'
             passHref

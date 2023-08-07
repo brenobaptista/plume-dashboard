@@ -61,7 +61,7 @@ const Sitemap = () => (
       </li>
       <li>
         <Link
-          href='/flow/reset-password'
+          href='/auth/reset-password'
           className='text-violet-600 hover:opacity-75 dark:text-violet-400'
           passHref
         >
@@ -70,7 +70,7 @@ const Sitemap = () => (
       </li>
       <li>
         <Link
-          href='/flow/sign-in'
+          href='/auth/sign-in'
           className='text-violet-600 hover:opacity-75 dark:text-violet-400'
           passHref
         >
@@ -79,7 +79,7 @@ const Sitemap = () => (
       </li>
       <li>
         <Link
-          href='/flow/sign-up'
+          href='/auth/sign-up'
           className='text-violet-600 hover:opacity-75 dark:text-violet-400'
           passHref
         >

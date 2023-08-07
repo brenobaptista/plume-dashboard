@@ -7,12 +7,12 @@
     <loc>https://plumedashboard.vercel.app/dashboard/profile</loc>
   </url>
   <url>
-    <loc>https://plumedashboard.vercel.app/flow/reset-password</loc>
+    <loc>https://plumedashboard.vercel.app/auth/reset-password</loc>
   </url>
   <url>
-    <loc>https://plumedashboard.vercel.app/flow/sign-in</loc>
+    <loc>https://plumedashboard.vercel.app/auth/sign-in</loc>
   </url>
   <url>
-    <loc>https://plumedashboard.vercel.app/flow/sign-up</loc>
+    <loc>https://plumedashboard.vercel.app/auth/sign-up</loc>
   </url>
 </urlset>
