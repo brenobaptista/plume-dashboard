@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const Page = () => (
   <>
-    <Heading tag='h2' className='text-center'>
+    <Heading tag='h2' className='pb-4 text-center'>
       Reset Password
     </Heading>
     <ResetPasswordForm />

@@ -23,7 +23,9 @@ const ChangePasswordForm = () => {
 
   return (
     <>
-      <Heading tag='h2'>Change password</Heading>
+      <Heading tag='h2' className='pb-4'>
+        Change password
+      </Heading>
       <form onSubmit={handlePassword} className='max-w-xs space-y-4'>
         <InputPassword
           label='Current password'

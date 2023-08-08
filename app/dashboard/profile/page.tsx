@@ -11,7 +11,9 @@ export const metadata: Metadata = {
 
 const Page = () => (
   <>
-    <Heading tag='h1'>Profile</Heading>
+    <Heading tag='h1' className='pb-4'>
+      Profile
+    </Heading>
     <div className='flex flex-col gap-8'>
       <div className='rounded border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6'>
         <ChangeEmailForm />

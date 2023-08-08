@@ -14,7 +14,9 @@ const DeleteAccount = () => {
 
   return (
     <>
-      <Heading tag='h2'>Delete account</Heading>
+      <Heading tag='h2' className='pb-4'>
+        Delete account
+      </Heading>
       <p className='pb-8'>
         We’re sorry to hear you’d like to delete your account.
       </p>

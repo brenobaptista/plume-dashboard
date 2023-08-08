@@ -19,7 +19,9 @@ const ChangeEmailForm = () => {
 
   return (
     <>
-      <Heading tag='h2'>Change email</Heading>
+      <Heading tag='h2' className='pb-4'>
+        Change email
+      </Heading>
       <form onSubmit={handleEmail} className='max-w-xs space-y-4'>
         <Input
           label='Email'
