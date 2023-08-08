@@ -4,12 +4,12 @@ import Dropdown from './Dropdown'
 import { Hamburger } from '@/icons'
 import ThemeSwitcher from '@/components/ThemeSwitcher'
 
-interface Props {
+interface IToolbar {
   toggleCollapsed(): void
 }
 
 const Toolbar = forwardRef(
-  ({ toggleCollapsed }: Props, toggleRef: React.Ref<HTMLButtonElement>) => (
+  ({ toggleCollapsed }: IToolbar, toggleRef: React.Ref<HTMLButtonElement>) => (
     <nav className='flex w-screen justify-between p-6 sm:w-auto'>
       <button
         ref={toggleRef}

@@ -1,9 +1,6 @@
-interface Props {
-  width: number
-  height: number
-}
+import { IIcon } from './types'
 
-const Heart = ({ width, height }: Props) => (
+const Heart = ({ width, height }: IIcon) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 512 512'

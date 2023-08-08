@@ -22,11 +22,11 @@ const inter = Inter({
   display: 'swap'
 })
 
-interface Props {
+interface IRootLayout {
   children: ReactNode
 }
 
-const RootLayout = ({ children }: Props) => (
+const RootLayout = ({ children }: IRootLayout) => (
   <html lang='en' className={`${inter.variable} font-sans antialiased`}>
     <body className='bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200'>
       <ThemeProvider>{children}</ThemeProvider>

@@ -1,9 +1,6 @@
-interface Props {
-  width: number
-  height: number
-}
+import { IIcon } from './types'
 
-const Hamburger = ({ width, height }: Props) => (
+const Hamburger = ({ width, height }: IIcon) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 448 390'

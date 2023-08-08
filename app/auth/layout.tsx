@@ -3,11 +3,11 @@ import { ReactNode } from 'react'
 import { Feather } from '@/icons'
 import ThemeSwitcher from '@/components/ThemeSwitcher'
 
-interface Props {
+interface ILayout {
   children: ReactNode
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children }: ILayout) => {
   return (
     <div className='flex h-screen items-center justify-around p-6'>
       <div className='rounded border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800'>

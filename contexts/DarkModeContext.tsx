@@ -1,11 +1,11 @@
 import { createContext } from 'react'
 
-interface Context {
+interface IDarkModeContext {
   darkMode: boolean
   toggleDarkMode: () => void
 }
 
-const DarkModeContext = createContext<Context>({
+const DarkModeContext = createContext<IDarkModeContext>({
   darkMode: false,
   toggleDarkMode: () => null
 })

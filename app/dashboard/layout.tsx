@@ -5,11 +5,11 @@ import { useState, useEffect, useRef, ReactNode } from 'react'
 import Sidebar from './Sidebar'
 import Toolbar from './Toolbar'
 
-interface Props {
+interface ILayout {
   children: ReactNode
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children }: ILayout) => {
   const [collapsed, setCollapsed] = useState<boolean>(false)
 
   const toggleRef = useRef<HTMLButtonElement>(null)

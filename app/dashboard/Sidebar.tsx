@@ -4,12 +4,12 @@ import Link from 'next/link'
 import { Feather, Home } from '@/icons'
 import Heading from '@/components/Heading'
 
-interface Props {
+interface ISidebar {
   collapsed: boolean
 }
 
 const Sidebar = forwardRef(
-  ({ collapsed }: Props, sidebarRef: React.Ref<HTMLElement>) => (
+  ({ collapsed }: ISidebar, sidebarRef: React.Ref<HTMLElement>) => (
     <nav
       ref={sidebarRef}
       className={`min-h-screen w-64 border-r border-gray-200 bg-white px-5 py-7 dark:border-gray-700 dark:bg-gray-800 ${

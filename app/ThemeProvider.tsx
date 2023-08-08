@@ -4,11 +4,11 @@ import { useState, useEffect, ReactNode } from 'react'
 
 import DarkModeContext from '@/contexts/DarkModeContext'
 
-interface Props {
+interface IThemeProvider {
   children: ReactNode
 }
 
-const ThemeProvider = ({ children }: Props) => {
+const ThemeProvider = ({ children }: IThemeProvider) => {
   const [darkMode, setDarkMode] = useState<boolean>(false)
   const [mounted, SetMounted] = useState<boolean>(false)
 

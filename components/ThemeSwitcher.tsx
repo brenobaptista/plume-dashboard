@@ -5,11 +5,11 @@ import { useContext } from 'react'
 import { Moon, Sun } from './icons'
 import DarkModeContext from '@/contexts/DarkModeContext'
 
-interface Props {
+interface IThemeSwitcher {
   className: string
 }
 
-const ThemeSwitcher = ({ className }: Props) => {
+const ThemeSwitcher = ({ className }: IThemeSwitcher) => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext)
 
   return (
