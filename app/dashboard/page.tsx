@@ -27,15 +27,14 @@ const Plume = () => (
   <div>
     <Heading tag='h2'>Plume</Heading>
     <p>Dashboard template made using Next.js + Tailwind CSS + TypeScript.</p>
-    <div>
-      <Link
-        href='https://github.com/brenobaptista/plume-dashboard'
-        className='text-violet-600 hover:opacity-75 dark:text-violet-400'
-        passHref
-      >
-        Source code
-      </Link>
-    </div>
+    <a
+      className='text-violet-600 hover:opacity-75 dark:text-violet-400'
+      href='https://github.com/brenobaptista/plume-dashboard'
+      target='_blank'
+      rel='noreferrer noopener'
+    >
+      Source code
+    </a>
   </div>
 )
 
@@ -110,13 +109,14 @@ const License = () => (
     <Heading tag='h2'>License</Heading>
     <p>
       This project is licensed under the{' '}
-      <Link
-        href='https://github.com/brenobaptista/plume-dashboard/blob/main/LICENSE'
+      <a
         className='text-violet-600 hover:opacity-75 dark:text-violet-400'
-        passHref
+        href='https://github.com/brenobaptista/plume-dashboard/blob/main/LICENSE'
+        target='_blank'
+        rel='noreferrer noopener'
       >
         MIT License
-      </Link>
+      </a>
     </p>
   </div>
 )

@@ -65,6 +65,8 @@ const Dropdown = () => {
             href='https://github.com/brenobaptista/plume-dashboard'
             className='flex items-center space-x-4 px-6 py-2 hover:opacity-75'
             role='menuitem'
+            target='_blank'
+            rel='noreferrer noopener'
           >
             <Question width={12} height={12} />
             <span>Help</span>
